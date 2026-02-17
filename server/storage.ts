@@ -27,6 +27,7 @@ import {
   type SarWithDetails,
 } from "@shared/schema";
 import { eq, desc, and, inArray, sql } from "drizzle-orm";
+import { MockStorage } from "./mock-storage";
 
 export interface IStorage {
   getCustomers(): Promise<Customer[]>;
@@ -233,4 +234,6 @@ export class DatabaseStorage implements IStorage {
   }
 }
 
-export const storage = new DatabaseStorage();
+export const storage = process.env.DATABASE_URL 
+  ? new DatabaseStorage()
+  : new MockStorage();

@@ -2,10 +2,14 @@ import type { Express, Request, Response } from "express";
 import OpenAI from "openai";
 import { chatStorage } from "./storage";
 
-const openai = new OpenAI({
-  apiKey: process.env.AI_INTEGRATIONS_OPENAI_API_KEY,
-  baseURL: process.env.AI_INTEGRATIONS_OPENAI_BASE_URL,
-});
+let openai: any = null;
+
+if (process.env.AI_INTEGRATIONS_OPENAI_API_KEY) {
+  openai = new OpenAI({
+    apiKey: process.env.AI_INTEGRATIONS_OPENAI_API_KEY,
+    baseURL: process.env.AI_INTEGRATIONS_OPENAI_BASE_URL,
+  });
+}
 
 export function registerChatRoutes(app: Express): void {
   // Get all conversations
@@ -79,6 +83,21 @@ export function registerChatRoutes(app: Express): void {
       res.setHeader("Content-Type", "text/event-stream");
       res.setHeader("Cache-Control", "no-cache");
       res.setHeader("Connection", "keep-alive");
+
+      // If OpenAI is not available, return mock response
+      if (!openai) {
+        const mockResponse = "I'm running in demo mode without OpenAI API access. This is a mock response to your message. In production, this would be powered by GPT.";
+        
+        // Stream the mock response
+        res.write(`data: ${JSON.stringify({ content: mockResponse })}\n\n`);
+        
+        // Save assistant message
+        await chatStorage.createMessage(conversationId, "assistant", mockResponse);
+        
+        res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
+        res.end();
+        return;
+      }
 
       // Stream response from OpenAI
       const stream = await openai.chat.completions.create({
