@@ -2,7 +2,7 @@
 
 
 
-<h1>Explainable & Auditable SAR Narrative Generation Framework</h1>
+<h1>Enhanced & Auditable SAR Narrative Generation Framework</h1>
 
 <h3><i>AI-Driven Compliance Intelligence Platform</i></h3>
 
@@ -22,7 +22,7 @@
 <h2>🌟 Overview</h2>
 
 <p>
-<b>Explainable & Auditable SAR Narrative Generation Framework</b> is an AI-powered compliance system
+<b> Enhanced & Auditable SAR Narrative Generation Framework </b> is an AI-powered compliance system
 that automatically generates regulator-ready Suspicious Activity Report (SAR) narratives using transaction alerts,
 customer data, and risk indicators.
 </p>
