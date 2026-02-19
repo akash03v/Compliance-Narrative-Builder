@@ -19,7 +19,7 @@
 
 <div>
 
-<h2>🌟 Overview</h2>
+<h2> Overview</h2>
 
 <p>
 <b> Enhanced & Auditable SAR Narrative Generation Framework </b> is an AI-powered compliance system
@@ -43,7 +43,7 @@ explainable, and regulator-defensible.
 
 <div>
 
-<h2>🎯 Problem Statement</h2>
+<h2> Problem Statement</h2>
 
 <p>
 Financial institutions must submit high-quality SAR reports whenever suspicious activity is detected.
@@ -66,7 +66,7 @@ human control, transparency, and full audit traceability.
 
 <div>
 
-<h2>✨ Key Features</h2>
+<h2> Key Features</h2>
 
 <ul>
 <li><b>AI Narrative Generator</b> — Automatically produces structured SAR reports</li>
@@ -83,7 +83,7 @@ human control, transparency, and full audit traceability.
 
 <div>
 
-<h2>🚀 Innovation & Research Insights</h2>
+<h2> Innovation & Research Insights</h2>
 
 <p>We studied existing enterprise compliance tools and identified major gaps:</p>
 
@@ -178,7 +178,7 @@ human control, transparency, and full audit traceability.
 
 <div>
 
-<h2>📂 System Architecture</h2>
+<h2> System Architecture</h2>
 
 <pre>
 User Input Data
@@ -202,7 +202,7 @@ Dashboard UI
 
 <div>
 
-<h2>🖼 UI Preview</h2>
+<h2> UI Preview</h2>
 
 <p><i>Add screenshots below</i></p>
 
@@ -216,7 +216,7 @@ Dashboard UI
 
 <div>
 
-<h2>🔐 Compliance Principles</h2>
+<h2> Compliance Principles</h2>
 
 <ul>
 <li>Explainable AI outputs</li>
@@ -233,7 +233,7 @@ Dashboard UI
 
 <div align="center">
 
-<h2>👨‍💻 Team</h2>
+<h2> Team</h2>
 
 <p>
 <b>Diyan Maner</b> — <a href="mailto:diyan.maner24@vit.edu">diyan.maner24@vit.edu</a><br><br>
