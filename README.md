@@ -204,7 +204,6 @@ Dashboard UI
 
 <h2> UI Preview</h2>
 
-<p><i>Add screenshots below</i></p>
 
 <img src="ui1.jpeg" width="700"/><br/><br/>
 <img src="ui2.jpeg" width="700"/><br/><br/>
