@@ -126,7 +126,7 @@ human control, transparency, and full audit traceability.
 
 <div>
 
-<h2>🛠 Technology Stack</h2>
+<h2> Technology Stack</h2>
 
 <table border="1" cellpadding="10">
 
